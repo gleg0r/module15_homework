@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 задание</title>
+    <style>
+        .chat {
+            width: 380px;
+            height: 100%;
+            max-height: 400px;
+            
+        }
+
+        .chat__header {
+            margin-bottom: 5px;
+            
+        }
+
+        .chat__input {
+            font-size: 16px;
+            color: black;
+            border: 1px solid #6f78fc;
+            border-radius: 5px;
+        }
+
+        .chat__main {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border: 3px solid #6f78fc;
+            border-radius: 5px;
+            height: 350px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        .chat__send {
+            border: 0;
+            outline: 0;
+            background-color: #5761f6;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .chat__geo {
+            border: 0;
+            outline: 0;
+            background-color: #5761f6;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .message__client {
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #9ca2f7;
+            border-radius: 5px;
+            padding: 5px;
+            align-self: flex-end;
+            margin-right: 10px;
+        }
+
+        .message__server {
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #9ca2f7;
+            border-radius: 5px;
+            padding: 5px;
+            align-self: flex-start;
+            margin-left: 10px;
+        }
+
+        .message__link {
+            font-size: 16px;
+            color: #9ca2f7;
+            text-decoration: underline #9ca2f7;
+            border-radius: 5px;
+            padding: 1px 3px 1px 3px;
+            align-self: flex-end;
+            margin-right: 10px;
+            border: 3px solid #9ea6fd;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat">
+        <div class="chat__header">
+            <input class="chat__input" type="text">
+            <button class="chat__send">Send</button>
+            <button class="chat__geo">Геолокация</button>
+        </div>
+        <div class="chat__main">
+
+        </div>
+    </div>
+</body>
+<script src="./js/work_3.js"></script>
+</html>
